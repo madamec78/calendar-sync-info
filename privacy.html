@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zásady ochrany osobních údajů – Calendar Sync</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:42rem;margin:3rem auto;padding:0 1rem;color:#172033}a{color:#2557d6}</style>
+</head>
+<body>
+<h1>Zásady ochrany osobních údajů</h1>
+<p><b>Calendar Sync</b> je interní aplikace provozovaná pro vlastní potřebu. Není nabízena veřejnosti.</p>
+
+<h2>Jaká data aplikace používá</h2>
+<ul>
+<li>Přes Google OAuth získává přístup <b>pouze pro čtení</b> k plánovacímu souboru na Google Drive (<code>drive.readonly</code>).</li>
+<li>Vytváří a upravuje kalendáře a události v Google Kalendáři (<code>calendar</code>), které sama vytvořila, a sdílí je pro čtení e-mailům techniků zadaným správcem.</li>
+<li>Ukládá jména techniků z plánu, jejich e-mailové adresy a provozní záznamy (historie synchronizací) do vlastní databáze na serveru provozovatele.</li>
+</ul>
+
+<h2>Co aplikace nedělá</h2>
+<ul>
+<li>Data neprodává, nesdílí s třetími stranami ani nepoužívá k reklamě nebo trénování modelů.</li>
+<li>Neupravuje ani nemaže události, které nevytvořila.</li>
+<li>Nepřistupuje k jiným souborům na Drive než k nastavenému plánu, ani k jiným kalendářům než ke kalendářům techniků.</li>
+</ul>
+
+<h2>Uložení a odvolání přístupu</h2>
+<p>Přihlašovací token je uložen pouze na serveru provozovatele. Přístup lze kdykoli odvolat v nastavení Google účtu (Zabezpečení → Aplikace třetích stran), tím synchronizace skončí.
+Data techniků lze na žádost smazat.</p>
+
+<h2>Kontakt</h2>
+<p>Dotazy k ochraně osobních údajů: <b>madamec.test@google.com</b></p>
+
+<hr>
+<h1>Privacy Policy (English)</h1>
+<p><b>Calendar Sync</b> is a private, internally operated application and is not offered to the public.
+It uses Google OAuth to read one planning spreadsheet on Google Drive (read-only) and to manage the Google Calendars it created for technicians, which it shares read-only with the e-mail addresses configured by the administrator.
+Technician names, e-mail addresses and sync logs are stored only in the operator's own database. Data is not sold, shared with third parties, or used for advertising or model training.
+The application never modifies or deletes events it did not create. Access can be revoked at any time in the Google Account settings. Contact: <b>madamec.test@google.com</b></p>
+</body>
+</html>
